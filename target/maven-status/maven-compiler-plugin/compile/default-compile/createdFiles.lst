@@ -1,0 +1,5 @@
+com/github/tarcisioN/mtgtt/application/MtgttApplication.class
+com/github/tarcisioN/mtgtt/MtgttConfiguration.class
+com/github/tarcisioN/mtgtt/views/TournamentView.class
+com/github/tarcisioN/mtgtt/resources/MtgttResource.class
+com/github/tarcisioN/mtgtt/core/Saying.class

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        <script type="text/javascript">
+            function sendContent(){
+                var url = "http://localhost:8080/tournament";
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: '{"content":"Michael"}',
+                    contentType: "application/json",
+                    cache: false
+                }).done(function ()
+                {
+                    console.log(arguments);
+                }).fail(function ()
+                {
+                    console.log(arguments);
+                });
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="top">
+            <div>Novo Torneio</div>
+        </div>
+        <div>
+            {{player1}}
+            {{player2}}
+        </div>
+
+        <br/><button onclick="sendContent()">Submit</button>
+    </body>
+</html>
